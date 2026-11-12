@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* background */
+body {
+    background-color: #1e272e;
+    color: #181717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* painel */
+h1 {
+    color: #ffffff;
+    background-color: #0510af;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 18px;
+    border-radius: 15px 15px 0 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 8px solid #d2d6e2;
+    border-right: 8px solid #d2dae2;
+}
+
+
+/* visor digital */
+#saldo {
+    background-color: #111827;
+    color: #0de030;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    border-top: #ced6e0;
+    border-left: 8px solid #d2d6e2;
+    border-right: 8px solid #d2dae2;
+    
+}
+
+/* mensagem na tela */
+#mensagem {
+    background-color: #f1f2f6;
+    width: 100%;
+    max-width: 450px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-left: 8px solid #d2dae2;
+    border-right: 8px solid #d2dae2;
+}
+
+/* seleção de tempo */
+h3 {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+    color: #2f3542;
+    font-size: 1.1rem;
+    border-left: 8px solid #d2dae2;
+    border-right: 8px solid #d2dae2;
+}
+
+/* compra de tempo */
+div {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 15px 20px 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    border-left: 8px solid #d2dae2;
+    border-right: 8px solid #d2dae2;
+}
+
+div:last-of-type {
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/*  depósito */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #8e949b;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #080a0a;
+}
+
+/* estilo dos botões */
+button {
+    flex: 1 1 45%;
+    padding: 12px 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    color: #ffffff;
+    background-color: #52525a;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+/* depositar verde */
+div:first-of-type button:nth-of-type(1) {
+    background-color: #05c46b; 
+}
+/* cancelar vermelho */
+div:first-of-type button:nth-of-type(2) {
+    background-color: #ff3f34; 
+}
+/* devolver troco laranja */
+div:first-of-type button:nth-of-type(3) {
+    background-color: #ffa801; 
+    flex: 1 1 100%;
+}
